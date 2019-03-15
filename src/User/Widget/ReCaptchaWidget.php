@@ -13,7 +13,7 @@ namespace Da\User\Widget;
 
 use Yii;
 use yii\base\InvalidConfigException;
-use yii\helpers\Html;
+use yii\bootstrap4\Html;
 use yii\web\View;
 use yii\widgets\InputWidget;
 

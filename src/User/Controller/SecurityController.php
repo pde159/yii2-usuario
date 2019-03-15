@@ -29,7 +29,7 @@ use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\Response;
-use yii\widgets\ActiveForm;
+use yii\bootstrap4\ActiveForm;
 
 class SecurityController extends Controller
 {

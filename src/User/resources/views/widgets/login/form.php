@@ -9,13 +9,13 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
+use yii\bootstrap4\Html;
 use yii\helpers\Url;
-use yii\widgets\ActiveForm;
+use yii\bootstrap4\ActiveForm;
 
 /**
  * @var yii\web\View           $this
- * @var yii\widgets\ActiveForm $form
+ * @var yii\bootstrap4\ActiveForm $form
  * @var Da\User\Form\LoginForm $model
  * @var string                 $action
  */

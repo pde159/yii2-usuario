@@ -9,8 +9,8 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-use yii\grid\GridView;
-use yii\helpers\Html;
+use kartik\grid\GridView;
+use yii\bootstrap4\Html;
 use yii\web\View;
 use yii\widgets\Pjax;
 

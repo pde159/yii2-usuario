@@ -5,7 +5,7 @@ use Da\User\Model\Token;
 use Da\User\Model\User;
 use Da\User\Module;
 use tests\_fixtures\UserFixture;
-use yii\helpers\Html;
+use yii\bootstrap4\Html;
 
 class GdprCest
 {

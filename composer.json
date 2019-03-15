@@ -46,12 +46,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=5.5",
-        "2amigos/yii2-selectize-widget": "^1.1",
+        "php": ">=7.0",
         "yiisoft/yii2-authclient": "^2.1",
         "yiisoft/yii2-httpclient": "^2.0",
-        "yiisoft/yii2-bootstrap": "^2.0",
-        "yiisoft/yii2-swiftmailer": "^2.0"
+        "yiisoft/yii2-bootstrap4": "^2.0",
+        "yiisoft/yii2-swiftmailer": "^2.0",
+        "kartik-v/yii2-widget-select2": "^2.0",
+        "kartik-v/yii2-grid": "^3.0"
     },
     "suggest": {
         "2amigos/2fa-library": "Needed if you want to enable 2 Factor Authentication. Require version ^1.0",

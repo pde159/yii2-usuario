@@ -16,7 +16,7 @@ use yii\authclient\ClientInterface;
 use yii\authclient\widgets\AuthChoice;
 use yii\authclient\widgets\AuthChoiceAsset;
 use yii\base\InvalidParamException;
-use yii\helpers\Html;
+use yii\bootstrap4\Html;
 use yii\helpers\Url;
 
 class ConnectWidget extends AuthChoice

@@ -42,13 +42,13 @@ Create a new file and name it `request.php` and add it in `@app/views/user/recov
 ```php 
 <?php
 
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap4\Html;
+use yii\bootstrap4\ActiveForm;
 use yii\captcha\Captcha;
 
 /**
  * @var yii\web\View $this
- * @var yii\widgets\ActiveForm $form
+ * @var yii\bootstrap4\ActiveForm $form
  * @var \Da\User\Form\RecoveryForm $model
  */
 

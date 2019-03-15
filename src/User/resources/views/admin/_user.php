@@ -10,7 +10,7 @@
  */
 
 /**
- * @var yii\widgets\ActiveForm
+ * @var yii\bootstrap4\ActiveForm
  * @var \Da\User\Model\User    $user
  */
 ?>

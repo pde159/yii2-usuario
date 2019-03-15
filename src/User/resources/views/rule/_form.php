@@ -5,8 +5,8 @@
  * @var $model \Da\User\Model\Rule
  */
 
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap4\Html;
+use yii\bootstrap4\ActiveForm;
 
 ?>
 

@@ -108,13 +108,38 @@ Once we have it installed, we have to configure it on your `config.php` file.
 
 ```php 
 'modules' => [
+    ...
     'user' => [
         'class' => Da\User\Module::class,
         // ...other configs from here: [Configuration Options](installation/configuration-options.md), e.g.
         // 'generatePasswords' => true,
         // 'switchIdentitySessionKey' => 'myown_usuario_admin_user_key',
     ]
+    ...
 ]
+```
+
+And add the grid module.
+
+
+```php 
+'modules' => [
+    ...
+    'gridview' =>  [
+        'class' => kartik\grid\Module::class,
+    ],
+    ...
+]
+```
+
+Using kartik Bootstrap4 modules, we needs to configure it on your `param.php` file. 
+
+```php 
+return [
+    ...
+    'bsVersion' => '4.x',
+    ...
+];
 ```
 
 NOTE: If you are using the Yii2 Basic Template, make sure you remove this (default user model config) from your `config.php`,

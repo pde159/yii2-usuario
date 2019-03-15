@@ -15,10 +15,10 @@
  */
 
 use Da\User\Helper\AuthHelper;
-use dosamigos\selectize\SelectizeDropDownList;
+use kartik\select2\Select2;
 use yii\helpers\ArrayHelper;
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap4\Html;
+use yii\bootstrap4\ActiveForm;
 
 $unassignedItems = Yii::$container->get(AuthHelper::class)->getUnassignedItems($model);
 ?>
@@ -34,23 +34,20 @@ $unassignedItems = Yii::$container->get(AuthHelper::class)->getUnassignedItems($
 
 <?= $form->field($model, 'description') ?>
 
-<?= $form->field($model, 'rule')->widget(SelectizeDropDownList::class, [
-    'items' => ArrayHelper::map(Yii::$app->getAuthManager()->getRules(), 'name', 'name'),
+<?= $form->field($model, 'rule')->widget(Select2::class, [
+    'data' => ArrayHelper::map(Yii::$app->getAuthManager()->getRules(), 'name', 'name'),
     'options' => [
-        'prompt' => 'Select rule...'
+        'prompt' => Yii::t('usuario', 'Select rule...')
     ]
 ]) ?>
 
-<?= $form->field($model, 'children')->widget(
-    SelectizeDropDownList::class,
-    [
-        'items' => $unassignedItems,
-        'options' => [
-            'id' => 'children',
-            'multiple' => true,
-        ],
-    ]
-) ?>
+<?= $form->field($model, 'children')->widget(Select2::class, [
+    'data' => $unassignedItems,
+    'options' => [
+        'id' => 'children',
+        'multiple' => true,
+    ],
+]) ?>
 
 <?= Html::submitButton(Yii::t('usuario', 'Save'), ['class' => 'btn btn-success btn-block']) ?>
 
