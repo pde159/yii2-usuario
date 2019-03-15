@@ -1,5 +1,5 @@
 {
-    "name": "2amigos/yii2-usuario",
+    "name": "pde159/yii2-usuario",
     "description": "Highly customizable and extensible user management, authentication, and authorization Yii2 extension",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
