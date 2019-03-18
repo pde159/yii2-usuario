@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.0.0
+
+- bootstrap 4 compatible
+- add menu widget to get bs4 compatibility
+- doc fixes
+
 ## 1.1.5 - Work in progress
  - Fix: Fix condition in EmailChangeService (it was always false) (borisaeric)
  - Fix #198: Updated translations by quique, bizley, TonisOrmisson, guogan, Dezinger, maxxer, wautvda, mrbig00, fabiomlferreira, WeeSee
